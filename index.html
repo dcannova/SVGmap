@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Doors - SVG hotspots</title>
+    <script>
+        addEventListener("DOMContentLoaded", (event) => {
+            const circles = document.querySelectorAll('circle');
+            circles.forEach(el => {
+                el.addEventListener('click', (e) => {
+                    window.open(e.target.getAttribute('src'));
+                })
+            })    
+        });
+    </script>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        body{
+            background-color: #0a182f;
+            display: flex;
+        }
+
+        svg {
+            width: 100%;
+        }
+
+        svg circle{
+            cursor: pointer;            
+            transition: 0.5s;
+        }
+
+        svg circle:hover{
+            fill:rgba(255, 255, 255, 0.5);
+            filter: blur(2px);
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 1920 1080">
+        <image width="1920" height="1080" xlink:href="raster.jpeg"/>
+        <circle cx="1041" cy="196" r="32" src="https://www.youtube.com/watch?v=tEXlWgMOtqc" fill="transparent"/>
+        <circle cx="338" cy="296" r="32" src="https://www.youtube.com/watch?v=gdnzBNMfZfo" fill="transparent"/>
+        <circle cx="1520" cy="268" r="32" src="https://www.youtube.com/watch?v=MZKRb4qrJMo" fill="transparent"/>
+        <circle cx="347" cy="666" r="32" src="https://www.youtube.com/watch?v=c-xUvX1SSMI" fill="transparent"/>
+        <circle cx="1565" cy="665" r="32" src="https://www.youtube.com/watch?v=xDLQlzTf9Mw" fill="transparent"/>
+    </svg>
+</body>
+</html>
