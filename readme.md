@@ -2,4 +2,4 @@
 
 A vanilla example to show how to use the power of SVG format to display active hotspots on a raster image making a nice responsive interface.
 
-[Demo](raster.jpeg)
+![Demo](raster.jpeg)
